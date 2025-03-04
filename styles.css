@@ -1,0 +1,151 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(221, 100%, 96%);
+}
+
+.container {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    flex-direction: row; 
+}
+
+.result-box {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px; 
+    padding: 20px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    flex: 1;
+}
+
+.result-box h1 {
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+}
+
+.score-circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.score {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.total {
+    font-size: 16px;
+    color: hsl(241, 100%, 89%);
+}
+
+.result-box h2 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.result-box p {
+    font-size: 16px;
+    color: hsl(241, 100%, 89%);
+    padding: 0 20px;
+}
+
+.summary-box {
+    padding: 20px;
+    flex: 1;
+}
+
+.summary-box h2 {
+    font-size: 18px;
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 20px;
+}
+
+.summary-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+.summary-item span {
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; 
+        border-radius: 20px; 
+        max-width: 100%; 
+        overflow: hidden; 
+    }
+
+    .result-box {
+        border-radius: 20px; 
+    }
+
+    .summary-box {
+        border-radius: 0 0 20px 20px; 
+        margin-top: -1px; 
+    }
+}
